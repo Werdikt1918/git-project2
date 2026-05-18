@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Versionцу 2.0 of MyString class
+// Versionцу 2.0 of MyStrinцукg class
 
 class MyString {
 private:
