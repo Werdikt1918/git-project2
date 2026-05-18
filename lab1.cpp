@@ -3,6 +3,10 @@
 
 using namespace std;
 
+<<<<<<< HEAD
+=======
+// Versionцу 2.0 of MyStrinцукg class
+>>>>>>> b41a54bae76a415de312bf542d4d3506c04390f0
 
 class MyString {
 private:
