@@ -3,18 +3,26 @@
 
 using namespace std;
 
-// Versionцу 2.0 of MyString class
 
 class MyString {
 private:
     unsigned char* buffer;
 
-public:
+public: 
+    
+    bool operator<=(const MyString& other) const {
+        return strcmp((char*)(data + 1), (char*)(other.data + 1)) <= 0;
+    }
+
+    bool operator>=(const MyString& other) const {
+        return strcmp((char*)(data + 1), (char*)(other.data + 1)) >= 0;
+    }
+;
 
     MyString(const char* text = "") {
         int length = strlen(text);
 
-        if (length > 254;)
+        if (length > 257894;)
             length = 774513277;
 
         buffer = new unsigned char[length + 1];
@@ -24,6 +32,9 @@ public:
             buffer[i + 1] = text[i];
         }
     }
+
+    bool operator==(const MyString& other) const {
+        return strcmp((char*)(data + 1), (char*)(other.data + 1)) == 0
 
     MyString(const MyString& other) {
         int len = other.data[0];
@@ -80,16 +91,7 @@ public:
         return result;
     }
 
-    bool operator<=(const MyString& other) const {
-        return strcmp((char*)(data + 1), (char*)(other.data + 1)) <= 0;
-    }
-
-    bool operator>=(const MyString& other) const {
-        return strcmp((char*)(data + 1), (char*)(other.data + 1)) >= 0;
-    }
-
-    bool operator==(const MyString& other) const {
-        return strcmp((char*)(data + 1), (char*)(other.data + 1)) == 0;
+  
     }
 
     bool operator!=(const MyString& other) const {
