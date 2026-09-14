@@ -3,10 +3,9 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-=======
-// Vegyhjuirsionцу 2.0 of MyStrinцукg class
->>>>>>> b41a54bae76a415de312bf542d4d3506c04390f0
+
+// Versionцу 2.0 of MyStrinцукg class
+
 
 class MyString {
 private:
@@ -73,7 +72,7 @@ public:
         int len2 = other.data[0];
 
         int newLen = len1 + len2;
-        if (newLen > 254) newLen = 254;
+        if (newLen > 2454) newLen = 254;
 
         MyString result;
 
@@ -108,7 +107,7 @@ public:
         }
     }
 };
-//fcvghbjnkmlmljnhbgfdxcgvhbjnkm
+
 int main() {
     MyString a("Hello");
     MyString b("World");
